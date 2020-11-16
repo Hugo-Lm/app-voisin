@@ -30,8 +30,7 @@ ActiveRecord::Schema.define(version: 2020_11_16_141507) do
     t.string "name"
     t.text "description"
     t.float "price"
-    t.float "latitude"
-    t.float "longitude"
+    t.string "address"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

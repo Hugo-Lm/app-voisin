@@ -9,6 +9,5 @@ class User < ApplicationRecord
 
   has_many :bookings
   has_many :products
-  has_many :products, through: :bookings
-
+  has_many :booked_products, through: :bookings, class_name: "Product", source: :user
 end
